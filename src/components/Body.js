@@ -1,7 +1,9 @@
+import Card from "./Card";
+
 const Body = () =>{
     return(
         <div className="body_container">
-            body
+            <Card />
           
 
         </div>

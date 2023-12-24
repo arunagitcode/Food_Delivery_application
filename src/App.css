@@ -45,6 +45,32 @@ border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
 }
+.card_container{
+  width: 250px;
+  height: 320px;
+  border: 1px solid;
+  /* border-radius: 20px; */
+  margin: 20px;
+  background-color: rgb(245, 197, 9);
+  cursor: pointer;
+  
+}
+.card_image_container {
+  border: 1px solid;
+  /* border-radius: 20px; */
+  height: 150px;
+  margin: 5px;
+  background-color: rgb(35, 35, 34);
+
+}
+.card_text_container{
+  border: 1px solid;
+  /* border-radius: 20px; */
+  height: 150px;
+  margin: 5px;
+  background-color: rgb(236, 206, 83);
+
+}
 .footer_container{
   width: 100%;
   border: 1px solid;
