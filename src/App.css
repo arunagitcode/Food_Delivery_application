@@ -1,15 +1,12 @@
 .header_container {
-  border: 1px solid;
   width: 100%;
   height: 130px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-color: rgb(245, 197, 9); */
 }
 .logo {
   padding: 15px;
-  background-color: black;
 }
 .text_container {
   font-weight: 900;
@@ -37,14 +34,10 @@ li:hover {
 
 .body_container {
   width: 100%;
-  border: 1px solid;
-  /* display: flex; */
-  /* background-color: rgb(245, 197, 9); */
   overflow-x: hidden;
 }
 .search_container {
   height: 60px;
-  /* border: 1px solid; */
   margin: 10px;
   display: flex;
   align-items: center;
@@ -71,24 +64,18 @@ li:hover {
 .card_container {
   width: 250px;
   height: 320px;
-  /* border: 1px solid; */
+  
   border-radius: 35px;
   margin: 20px;
-  /* background-color:rgb(237, 230, 151); */
   cursor: pointer;
-  /* text-overflow: ellipsis; */
-  /* overflow: auto; */
   overflow: hidden;
   text-align: center;
 }
 .card_container:hover {
   border: 1px solid;
-  /* background-color: rgb(147, 119, 9); */
 }
 .card_image_container {
-  /* height: 150px; */
   margin: 5px;
-  /* background-color: white; */
   border-radius: 30px;
 }
 .card_image_container > img {
@@ -98,12 +85,10 @@ li:hover {
   border-radius: 30px;
 }
 .card_text_container {
-  /* height: 150px; */
   margin: 5px;
 }
 
 .footer_container {
-  /* padding: 50px; */
   width: 100%;
   border: 1px solid;
   display: flex;
