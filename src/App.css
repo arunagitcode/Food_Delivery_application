@@ -64,29 +64,24 @@ li:hover {
 .card_container {
   width: 250px;
   height: 320px;
-  
-  border-radius: 35px;
   margin: 20px;
   cursor: pointer;
   overflow: hidden;
   text-align: center;
+  border-radius: 30px;
+
 }
 .card_container:hover {
   border: 1px solid;
+
 }
-.card_image_container {
-  margin: 5px;
-  border-radius: 30px;
-}
+
 .card_image_container > img {
-  width: 200px;
+  width: 250px;
   height: 150px;
-  margin: 20px;
   border-radius: 30px;
 }
-.card_text_container {
-  margin: 5px;
-}
+
 
 .footer_container {
   width: 100%;
