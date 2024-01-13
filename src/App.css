@@ -43,6 +43,10 @@ li:hover {
   align-items: center;
   justify-content: end;
 
+  .input_field {
+    margin-right: 15px;
+  }
+
   input {
     width: 250px;
   }
@@ -50,30 +54,30 @@ li:hover {
   input {
     padding: 10px;
     border-radius: 7px;
+    margin: 1px;
   }
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   overflow-x: hidden;
 }
 
 .card_container {
   width: 250px;
-  height: 320px;
+  height: 350px;
   margin: 20px;
   cursor: pointer;
   overflow: hidden;
-  text-align: center;
+  text-align: start;
   border-radius: 30px;
-
+}
+.card_text_container {
+  padding: 5px;
 }
 .card_container:hover {
-  border: 1px solid;
-
+  background-color: rgb(244, 206, 206);
 }
 
 .card_image_container > img {
@@ -81,7 +85,6 @@ li:hover {
   height: 150px;
   border-radius: 30px;
 }
-
 
 .footer_container {
   width: 100%;
@@ -92,4 +95,15 @@ li:hover {
   column-gap: 100px;
   background-color: black;
   color: white;
+}
+
+.login_btn {
+  button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    width: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
 }
