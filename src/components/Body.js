@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Card from "./Card";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   const [initialdata, setInitialData] = useState([]);
@@ -17,9 +18,9 @@ const Body = () => {
     );
 
     const json = await data.json();
-    console.log(
-      json.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    );
+    // console.log(
+    //   json.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    // );
     setInitialData(
       json.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
@@ -29,8 +30,8 @@ const Body = () => {
   };
 
   const handleTopRatedRest = () => {
-    const TopRatedRest = initialdata.filter((res) => res?.info.avgRating > 4.5);
-    setInitialData(TopRatedRest);
+    const TopRatedRest = initialdata.filter((res) => res?.info.avgRating > 4.2);
+    setFilteredList(TopRatedRest);
   };
 
   const handleSearchValue = () => {
@@ -57,7 +58,9 @@ const Body = () => {
       </div>
       <div className="cards">
         {filteredList.map((item) => (
-          <Card key={item.info.id} resData={item} />
+          <Link to={"/restaurant/" +item.info.id} key={item.info.id}>
+            <Card resData={item} />
+          </Link>
         ))}
       </div>
     </div>

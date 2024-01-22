@@ -9,6 +9,7 @@ import ContactUs from "./components/ContactUs";
 import Order from "./components/Order";
 import Error from "./components/Error";
 import Body from "./components/Body";
+import Restaurant from "./components/Restaurant";
 
 const appRouter = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/order",
         element: <Order />,
+      },
+      {
+        path: "/restaurant/:restId",
+        element: <Restaurant />,
       },
     ],
     errorElement: <Error />,

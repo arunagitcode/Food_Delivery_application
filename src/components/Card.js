@@ -26,7 +26,7 @@ const Card = (resData) => {
         <h5>
           {avgRating} {totalRatingsString} {costForTwo}
         </h5>
-        <h5> {cuisines}</h5>
+        <h5> {cuisines.join(",")}</h5>
        
       </div>
     </div>

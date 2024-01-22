@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: hwb(0 99.5% 1%);
 }
 .logo {
   padding: 15px;
@@ -62,27 +63,29 @@ li:hover {
   display: flex;
   flex-wrap: wrap;
   overflow-x: hidden;
+  margin: 30px;
 }
 
 .card_container {
   width: 250px;
-  height: 350px;
-  margin: 20px;
+  height: 400px;
+  margin: 0px 20px 0px 20px;
   cursor: pointer;
   overflow: hidden;
   text-align: start;
   border-radius: 30px;
 }
 .card_text_container {
-  padding: 5px;
+  padding-left: 5px;
+  color: black;
 }
 .card_container:hover {
-  background-color: rgb(244, 206, 206);
+  transform: scale(0.95, 0.95);
 }
 
 .card_image_container > img {
   width: 250px;
-  height: 150px;
+  height: 170px;
   border-radius: 30px;
 }
 
@@ -108,8 +111,66 @@ li:hover {
   }
 }
 
-.error{
-padding-top: 180px;
+.error {
+  padding-top: 180px;
   text-align: center;
+  color: red;
+}
+.btns {
+  height: 50px;
+  text-align: start;
+  margin: 0 300px 0 300px;
+  display: flex;
 
+  h6 {
+    padding: 5px;
+    cursor: pointer;
+  }
+}
+
+.restaurant_details {
+  text-align: start;
+  margin: 0px 300px 0px 300px;
+  .distance_box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -40px;
+    text-align: center;
+    border-bottom: 2px dotted rgb(217, 209, 209);
+  }
+  .distance {
+    text-align: start;
+  }
+  .rating {
+    margin-bottom: 5px;
+    border: 1px solid;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 100px;
+  }
+}
+.time_distance {
+  text-align: start;
+  align-items: center;
+  margin: 0px 300px 0px 300px;
+  display: flex;
+  column-gap: 20px;
+}
+.offer_box {
+  text-align: start;
+  align-items: center;
+  margin: 0px 300px 0px 300px;
+  border-bottom: 2px dotted rgb(217, 209, 209);
+  display: flex;
+  column-gap: 20px;
+  h6 {
+    border: 1px solid;
+    padding: 10px;
+    height: 50px;
+    width: 200px;
+    padding-top: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(249, 253, 253);
+  }
 }
