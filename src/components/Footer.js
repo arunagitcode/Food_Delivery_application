@@ -2,7 +2,7 @@ import { LOGO_URL } from "../utils/Logos";
 
 const Footer = () => {
   return (
-    <div className="footer_container">
+    <div className="flex justify-between items-center bg-black text-white p-4 ">
       <div>
         <h2> Spicy Food</h2>
         <h5>@2024 ABC Technologies Pvt.Ltd</h5>

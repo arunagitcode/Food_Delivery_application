@@ -10,6 +10,7 @@ import Order from "./components/Order";
 import Error from "./components/Error";
 import Body from "./components/Body";
 import Restaurant from "./components/Restaurant";
+import AboutClass from "./components/AboutClass";
 
 const appRouter = createBrowserRouter([
   {
@@ -20,9 +21,13 @@ const appRouter = createBrowserRouter([
         path: "/",
         element: <Body />,
       },
+      // {
+      //   path: "/about",
+      //   element: <About />,
+      // },
       {
         path: "/about",
-        element: <About />,
+        element: <AboutClass name={"aruna class component"} location = {"hyderabd"} />,
       },
       {
         path: "/contactus",
